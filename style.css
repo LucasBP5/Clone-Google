@@ -1,0 +1,262 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    background-color: rgba(32,33,36,1);
+}
+
+.cabecalho{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.menusup{
+    width: 260px;
+    height: 48px;
+    display: inline-flex;
+    justify-content: right;
+    align-items: center;
+    margin-right: 4px;
+}
+
+.menusup1{
+    display: inline-flex;
+    justify-content: right;
+    align-items: center;
+    margin-right: 4px;
+}
+
+.menusup2{
+    display: inline-flex;
+    justify-content: right;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.linkmenu{
+    font-family: arial;
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    padding: 10px;
+}
+
+.menusup a:hover{
+    text-decoration: underline;
+}
+
+.googleapps{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.googleapps:hover{
+    background-color: rgba(232,234,237,.08);
+}
+
+.redondomenu{
+    width: 4px;
+    height: 4px;
+    background-color: white;
+    border-radius: 2px;
+    margin: 1px;
+}
+
+.linemenu{
+    display: flex;
+    flex-direction: row;
+}
+
+.butonlogin{
+    width: 120px;
+    height: 36px;
+    margin-left: 10px;
+    background-color: #8AB4F8;
+    border: 0;
+    padding: 9px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.butonlogin a{
+    text-decoration: none;
+    color: black;
+}
+
+.butonlogin a:hover{
+    text-decoration: none;
+}
+
+.butonlogin:hover{
+    background-color: #95b6eb;
+}
+
+.container{
+    height: calc(100vh - 60px - 220px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pesquisa{
+    margin-top: 24px;
+    width: 582px;
+    height: 46px;
+    border: 1px solid #5f6368;
+    background-color: rgba(32,33,36,1);
+    border-radius: 23px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.pesquisa:hover{
+    background-color: #303134;
+    box-shadow: 0 1px 6px 0 #171717;
+    border-color: rgba(223,225,229,0);
+}
+
+input{
+    width: 403px;
+    height: 34px;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    font-size: 16px;
+    caret-color: white;
+    color: white;
+    margin-right: 10px;
+}
+
+input:focus{
+    outline: 0;
+}
+
+.lupa{
+    width: 17px;
+    height: 17px;
+    margin-right: 20px;
+    margin-left: 15px;
+}
+
+.voz{
+    width: 15px;
+    margin: 20px;
+}
+
+.camera{
+    width: 23px;
+}
+
+.botoes button{
+    margin-top: 40px;
+    background-color: #303134;
+    border: 1px solid #303134;
+    border-radius: 4px;
+    color: #e8eaed;
+    font-family: Arial;
+    font-size: 14px;
+    margin: 27px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.botoes button:hover{
+    outline: 0;
+    box-shadow: 0 1px 3px rgb(23 23 23 / 24%);
+    background-color: #303134;
+    border: 1px solid #5f6368;
+    color: #e8eaed;
+}
+
+.rodape{
+    background-color: #171717;
+    width: 100%;
+    height: 94px;
+    color: #9AA0A6;
+}
+
+.textoroda{
+    font-family: Arial;
+    font-size: 15px;
+    padding: 15px 30px;
+}
+
+.divisoria{
+    width: 100%;
+    height: 1px;
+    background-color: #3c4043;
+}
+
+.rodape2{
+    font-family: Arial;
+    font-size: 15px;
+    padding: 15px 30px;
+}
+
+.rodapetext{
+    color: #9AA0A6;
+    text-decoration: none;
+    margin-right: 20px;
+    font-family: Arial;
+    font-size: 14px;
+}
+
+.rodape2{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer{
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 425px)
+{
+    .pesquisa{
+        width: 350px;
+    }
+    input{
+        width: 171px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .rodape2{
+        display: block;
+    }
+    .rodape{
+        height: auto;
+    }
+
+    #nav1{
+        text-align: right;
+    }
+    #nav2{
+        margin-top: 5px;
+        text-align: center;
+    }
+}
